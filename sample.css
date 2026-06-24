@@ -1,0 +1,96 @@
+/* Simple CSS style template */
+
+:root {
+  --bg-color: #f4f7fb;
+  --text-color: #333;
+  --primary-color: #2a72d1;
+  --secondary-color: #6c7a96;
+  --card-bg: #ffffff;
+  --border-radius: 12px;
+  --shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: min(1150px, 100%);
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  padding: 1.5rem 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+nav {
+  margin-top: 0.75rem;
+}
+
+nav a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+nav a:hover {
+  color: var(--primary-color);
+}
+
+main {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+button,
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.3rem;
+  border: none;
+  border-radius: 999px;
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover,
+.btn:hover {
+  background: #255bb5;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--secondary-color);
+}
